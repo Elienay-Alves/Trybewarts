@@ -12,6 +12,11 @@ main {
   display: flex;
 }
 
+.radios {
+  display: flex;
+  flex-direction: column;
+}
+
 #evaluation-form {
   display: flex;
   flex-flow: wrap;
