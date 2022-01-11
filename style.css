@@ -27,3 +27,8 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+#div-checkbox-content {
+  display: flex;
+  flex-direction: column;
+}
