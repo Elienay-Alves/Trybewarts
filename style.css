@@ -14,7 +14,8 @@ main {
 
 #evaluation-form {
   display: flex;
-  flex-wrap: column wrap;
+  flex-flow: wrap;
+  flex-direction: column;
   width: 675px;
 }
 
