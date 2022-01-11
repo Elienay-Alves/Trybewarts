@@ -6,9 +6,9 @@ const botao = document.getElementById('botao');
 
 function validation() {
   if (email.value === 'tryber@tester.com' && senha.value === '123456') {
-    alert('Olá, tryber!');
+    alert('Olá, Tryber!');
   } else {
-    alert('Email ou senha incorretos.');
+    alert('Email ou senha inválidos.');
   }
 }
 
