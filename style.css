@@ -32,3 +32,8 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+#counter {
+  width: 520px;
+  text-align: end;
+}
