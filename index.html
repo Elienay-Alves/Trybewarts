@@ -23,6 +23,7 @@
 
   <main>
     <form id="evaluation-form">
+      <h2>Formulário de Avaliação</h2>
       <div id="fullname">
         <input type="text" placeholder="Nome" id="input-name">
         <input type="text" placeholder="Sobrenome" id="input-lastname">
@@ -54,7 +55,7 @@
         <label for=""><input type="checkbox" value="SQL">SQL</label>
         <label for=""><input type="checkbox" value="Python">Python</label>
       </section>
-      <section>
+      <section id="evaluate">
         <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
         <label for=""><input type="radio" name="rate" value="1">1</label>
         <label for=""><input type="radio" name="rate" value="2">2</label>
@@ -69,7 +70,7 @@
       </section>
       <section class="text-section">
         <label for="textarea" class="textarea">Deixe seu comentário:</label>
-        <textarea name="textarea" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+        <textarea name="textarea" id="textarea" cols="30" rows="10" maxlength="500" placeholder="Mande-nos um feedback"></textarea>
       </section>
       <div id="counter">500 characters remaining</div>
       <section class="agreement-section">
