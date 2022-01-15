@@ -94,11 +94,11 @@ const howYouHateMe = () => {
 // Que tal pegarmos os comments dessa pessoa pra ver o que ela acha da gente?
 const wonderfulComment = () => {
   const comment = document.getElementById('textarea').value;
-  const commentBox = document.getElementById('comment-container');
+  const commentBox = document.getElementById('textarea');
   commentBox.innerHTML = '';
   const createP = document.createElement('p');
   commentBox.appendChild(createP);
-  createP.innerText = `Observações ${comment}`;
+  createP.innerText = `Observações: ${comment}`;
 };
 
 // Por último mas não menos importante temos aqui a função que chama todas as funções:
