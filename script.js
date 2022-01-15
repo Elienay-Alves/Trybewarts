@@ -45,7 +45,7 @@ textArea.addEventListener('input', itsOverBrow);
 
 // Começando pela função que pega o nome:
 
-const fullNamaeForm = () => {
+const saveFullNameForm = () => {
   const name = document.getElementById('input-name').value;
   const lastName = document.getElementById('input-lastname').value;
   const fullName = document.getElementById('fullname');
@@ -53,4 +53,16 @@ const fullNamaeForm = () => {
   const createP = document.createElement('p');
   fullName.appendChild(createP);
   createP.innerText = `Nome: ${name} ${lastName}`;
+};
+
+// Agora vamos criar uma função que pega o e-mail e a casa:
+
+const saveEmailAndHouseForm = () => {
+  const emailForm = document.getElementById('input-email').value;
+  const house = document.getElementById('house').value;
+  const gettingBoth = document.getElementById('email-and-houses');
+  gettingBoth.innerHTML = '';
+  const createP = document.createElement('p');
+  gettingBoth.appendChild(createP);
+  createP.innerText = `Email: ${emailForm} || Casa ${house}`;
 };
