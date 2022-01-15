@@ -7,7 +7,7 @@ const textArea = document.querySelector('#textarea');
 const remainingLetters = document.querySelector('#counter');
 const maxLetters = 500;
 
-// Vamos criar uma função para validar o e-mail no avaliador. Essa função vai ver se o valor dentro dos inputs é o exigido pelo avaliador e caso seja irá emitir um alerta de bem vindo ao clicarmos em enviar, caso não ele mandará outro indicando um err o:
+// Vamos criar uma função para validar o e-mail no avaliador. Essa função vai ver se o valor dentro dos inputs é o exigido pelo avaliador e caso seja irá emitir um alerta de bem vindo ao clicarmos em enviar, caso não ele mandará outro indicando um erro:
 
 const validation = () => {
   if (email.value === 'tryber@teste.com' && password.value === '123456') {
