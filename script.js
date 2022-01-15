@@ -81,12 +81,34 @@ const familyAndContentForm = () => {
    Matérias: ${contentChecked}`;
 };
 
+// Vamos então agora pegar a nota que a pessoa usuaria deu para a Incrível Trybewarts:
+const howYouHateMe = () => {
+  const rate = document.querySelector('input[name="rate"]:checked').value;
+  const avaliator = document.getElementById('evaluate');
+  avaliator.innerHTML = '';
+  const createP = document.createElement('p');
+  avaliator.appendChild(createP);
+  createP.innerHTML = `Avaliação: ${rate}`;
+};
+
+// Que tal pegarmos os comments dessa pessoa pra ver o que ela acha da gente?
+const wonderfulComment = () => {
+  const comment = document.getElementById('textarea').value;
+  const commentBox = document.getElementById('comment-container');
+  commentBox.innerHTML = '';
+  const createP = document.createElement('p');
+  commentBox.appendChild(createP);
+  createP.innerText = `Observações ${comment}`;
+};
+
 // Por último mas não menos importante temos aqui a função que chama todas as funções:
 const saveInfo = (event) => {
   event.preventDefault();
   saveFullNameForm();
   saveEmailAndHouseForm();
   familyAndContentForm();
+  howYouHateMe();
+  wonderfulComment();
 };
 
 sendButton.addEventListener('click', saveInfo);
